@@ -17,7 +17,7 @@ export NPM_CONFIG_USERCONFIG="$XDG_CONFIG_HOME"/npm/npmrc
 
 export JAVA_HOME="$XDG_CONFIG_HOME"/java
 
-export PYTHONPATH="$PYTHONPATH:/var/home/vladislav/.local/lib/python3.10/site-packages"
+export PYTHONPATH="$PYTHONPATH:$HOME/.local/lib/python3.10/site-packages"
 
 # GPG stuff
 export GPG_TTY=$(tty)
