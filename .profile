@@ -15,7 +15,7 @@ export HISTFILE="$XDG_STATE_HOME"/bash/history
 export LESSHISTFILE="$XDG_CACHE_HOME"/less/history
 export NPM_CONFIG_USERCONFIG="$XDG_CONFIG_HOME"/npm/npmrc
 
-export JAVA_HOME="$XDG_CONFIG_HOME"/java
+export _JAVA_OPTIONS=-Djava.util.prefs.userRoot="$XDG_CONFIG_HOME"/java
 
 export PYTHONPATH="$PYTHONPATH:$HOME/.local/lib/python3.10/site-packages"
 
@@ -30,6 +30,7 @@ export THEOS_MAKE_PATH="$THEOS"/makefiles
 
 alias wget=wget --hsts-file="$XDG_DATA_HOME"/wget-hsts
 alias restart_usbmuxd="sudo systemctl restart usbmuxd; systemctl --user restart netmuxd"
+alias yarn="yarn --use-yarnrc $XDG_CONFIG_HOME/yarn/config"
 
 export PATH="$VOLTA_HOME/bin:$PATH"
 
